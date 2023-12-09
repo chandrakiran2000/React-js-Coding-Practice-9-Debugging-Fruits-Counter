@@ -3,7 +3,7 @@ import {Component} from 'react'
 import './index.css'
 
 class FruitsCounter extends Component {
-  state = {mangoesCount: 0, bananasCount: 0}
+  state = {mangoesCount: 4, bananasCount: 5}
 
   onClickEatBanana = () => {
     this.setState(prevState => ({bananasCount: prevState.bananasCount + 1}))
@@ -27,7 +27,7 @@ class FruitsCounter extends Component {
             <div className="counter-control">
               <img
                 src="https://assets.ccbp.in/frontend/react-js/mango-img.png"
-                alt="banana"
+                alt="mango"
                 className="fruit-image"
               />
               <div className="button-container">
